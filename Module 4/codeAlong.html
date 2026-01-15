@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        h1 {
+        color: orange;
+        background-color: green;
+        margin-right: 1000px;
+        font-family: 'Lucida Sans';
+
+        }
+
+        p {
+        font-size: 18px;
+        color: blue;
+        }
+
+        #greeting {
+        font-size: 24px;
+        color: blue;
+        } 
+
+        .highlight {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        }
+    
+    </style>
+    </head>
+    <body>
+    <h1>This is Heading 1</h1>
+    <p>This is an example of using an internal stylesheet with the style element. By defining CSS rules in the style element, we can apply consistent styling across the entire page without repeating the code for each element.</p>
+    <p style="font-family: monospace; font-size: 100px; font-weight: 1500; font-style: italic;">
+This is a paragraph of text.</p>
+        <div>
+<button>Button 1</button>
+<button>Button 2</button>
+</div>
+    <p>Hello, World!</p>
+    <p id="greeting">Hello, world!</p>
+    <p>Hello, World!</p>
+    <p>Here is a normal paragraph.</p>
+    <p class="highlight">This paragraph has the 'highlight' class applied to it.</p>
+    <p>Another normal paragraph.</p>
+    <p class="highlight">Another paragraph with the 'highlight' class.</p>
+    <button onclick="alert('Hello, World!')">Click Me</button>
+
+        <nav>
+            <ul>
+            <li><a href="\home">Home</a></li>
+            <li><a href="\about">About</a></li>
+            <li><a href="\services">Services</a></li>
+            <li><a href="\contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div itemscope itemtype="http://schema.org/Person">
+    <h2 itemprop="name">John Smith</h2>
+    <p itemprop="jobTitle">Web Developer</p>
+    <p>
+    Contact me at:
+    <a href="mailto:john@smithwebsolutions.com"
+    itemprop="email">john@smithwebsolutions.com
+    </a>
+    </p>
+</div>
+
+</body>
+</html>
