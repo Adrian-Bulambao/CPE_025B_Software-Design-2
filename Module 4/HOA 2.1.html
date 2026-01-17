@@ -3,13 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>School</title>
 
     <style>
 
         body{
+        background-color: beige;
+        margin: 0;
+        padding: 0;
+        }
+
+        .picture-container{
+            font-size: 10px;
 
         }
+
+        .box-container {
+        background-color: lightblue;
+        height: 60px;
+        padding: 0px;
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        align-items: center;
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+        padding-left: 60px;
+        }
+
+        .image-container {
+        margin-top: 0px;
+        position: relative;
+        width: 1890px;
+        height: 600px;
+        }
+
+        .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+        .mision-vision{
+            display: flex;
+            gap: 200px;
+            text-align: center;
+            font-size: 40px;
+        }
+        
+        .about-box{
+        height: 570px;
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-right: 100px;
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+        padding-left: 60px;
+
+        }
+
+
+        .about-title{
+            color: blue;
+            font-weight: bold;
+            font-size: 50px;
+
+        }
+        
+        .offered-courses {
+        font-size: 48px;
+        margin-left: 100px;
+        margin-bottom: 50px;
+        font-weight: bold;
+       }
+
+        .course-title {
+        font-size: 28px;
+        margin-top: 40px;
+        margin-left: 150px;
+        margin-bottom: 10px;
+        font-weight: 600;
+        }
+
+        .course-explanation {
+        font-size: 18px;
+        line-height: 1.7;
+        margin-left: 200px;
+        color: #444;
+        text-indent: 2em;
+        margin-bottom: 30px;
+        }
+
+
+        .contact-us {
+    max-width: 900px; 
+    margin-left: 100px;
+
+    
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 
 
 
@@ -20,14 +127,96 @@
 </head>
 <body>
 
-    <div>
+    <p class="box-container">
+        <img src="logo.png" width="70" height="70">
+        Just Another Academic Center
 
-        width: 200px;
-        height: 150px;
-        background-repeat: no-repeat;
-        margin: 0;
-        padding: 0;
+    </p>
+
+    <div class="image-container">
+    <img src="school.jpg"" width="1890" height="600">
+    <div class="overlay">
+        <div class="mision-vision">
+            <p>
+                <b>Mission Statement</b> <br>
+                Our mission is to empower students<br>
+                with knowledge, character, and critical<br>
+                thinking skills through a supportive <br>
+                and inclusive learning environment. <br>
+                We are committed to academic excellence,<br>
+                personal growth, and lifelong learning,<br>
+                preparing students to become responsible<br>
+                citizens and future leaders.
+            </p>
+            <p>
+                <b>Vision Statement</b><br>
+                Our vision is to be a leading <br>
+                educational institution that inspires<br>
+                curiosity, innovation, and integrity. <br>
+                We strive to nurture confident, compassionate,<br>
+                and capable individuals who positively impact<br>
+                their communities and the world.
+
+            </p>
+
+        </div>
     </div>
-    
+    </div>
+
+    <div class="about-box">
+        <p class="about-title">
+            About us
+
+        </p>
+
+        <p>
+            Our school is committed to creating a safe, inclusive, and inspiring environment where students are encouraged to learn, grow, and succeed. We provide a balanced education that emphasizes academic excellence, character formation, and critical thinking skills. Through engaging lessons, modern teaching approaches, and dedicated educators, we help students develop confidence and a love for learning.
+            <br>
+            <br>
+            We believe that education extends beyond textbooks. Our programs promote creativity, collaboration, and responsibility, preparing students to adapt to a rapidly changing world. By fostering respect, integrity, and community involvement, we aim to develop well-rounded individuals who are ready to pursue their goals and make a positive impact in society.
+
+        </p>
+            
+
+    </div>
+    <hr>
+    <br>
+    <div>
+        <p class="offered-courses">
+            Courses We Offer
+        </p>
+
+        <div class="course-title">
+            <ul>
+                <li>Architecture</li>
+                <li>Civil Engineering</li>
+                <li>Computer Engineering</li>
+                <li>Electrical Engineering</li>
+                <li>Electronics Engineering</li>
+                <li>Environmental and Sanitary Engineering</li>
+                <li>Industrial Engineering</li>
+                <li>Mechanical Engineering</li>
+            </ul>  
+        </div>
+        <hr>
+
+
+
+    </div>
+    <br>
+
+    <div class="contact-us">
+    <p style="font-size: 50px; font-weight: bold;">Contact Us</p>
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+
+
+
 </body>
 </html>
