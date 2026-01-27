@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UrbanGear Store</title>
+
+<style>
+/* ---------- Base Styles ---------- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+/* ---------- Header ---------- */
+header {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(90deg, #111, #333);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 100;
+}
+
+/* ---------- Main Layout ---------- */
+main {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ---------- Product Grid ---------- */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* ---------- Product Card ---------- */
+.product {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    width: 100%;
+    display: block;
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #ff4757;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* ---------- Product Info ---------- */
+.product-content {
+    padding: 20px;
+}
+
+.product-content p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ---------- Table ---------- */
+.product-specs {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.product-specs th,
+.product-specs td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.product-specs th {
+    background-color: #f0f0f0;
+}
+
+/* ---------- Contact Section ---------- */
+.contact-section {
+    margin-top: 60px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #333;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    margin-top: 60px;
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>UrbanGear Store</h1>
+    <p>Smart Tech for Everyday Life</p>
+</header>
+
+<main>
+
+<section class="products">
+
+    <div class="product">
+        <div class="product-image">
+            <img src="https://m.media-amazon.com/images/I/718gtjG7ivL.jpg" alt="Smart Backpack">
+            <span class="badge">Hot</span>
+        </div>
+
+        <div class="product-content">
+            <h2>Smart Backpack</h2>
+            <p>A stylish, water-resistant backpack with built-in USB charging and anti-theft design.</p>
+
+            <table class="product-specs">
+                <tr><th>Capacity</th><td>25L</td></tr>
+                <tr><th>Material</th><td>Polyester</td></tr>
+                <tr><th>Weight</th><td>900g</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-image">
+            <img src="https://www.leafstudios.in/cdn/shop/files/1_a43c5e0b-3a47-497d-acec-b4764259b10e_800x.png" alt="Wireless Headphones">
+            <span class="badge">New</span>
+        </div>
+
+        <div class="product-content">
+            <h2>Wireless Headphones</h2>
+            <p>Noise-cancelling headphones with 30-hour battery life and premium sound.</p>
+
+            <table class="product-specs">
+                <tr><th>Battery</th><td>30 hours</td></tr>
+                <tr><th>Connectivity</th><td>Bluetooth 5.3</td></tr>
+                <tr><th>Weight</th><td>250g</td></tr>
+            </table>
+        </div>
+    </div>
+
+</section>
+
+<section class="contact-section">
+    <h2>Contact UrbanGear</h2>
+
+    <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email">
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 UrbanGear Store • Built for modern living</p>
+</footer>
+
+</body>
+</html>
