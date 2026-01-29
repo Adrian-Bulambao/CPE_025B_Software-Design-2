@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+
+    <style>
+        body{
+            background-color: gray;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            padding-left: 600px;
+            margin: 0px;
+        }
+
+        header{
+            background-color: blue;
+            color: white;
+            font-size: 40px;
+            padding-left: 50px;
+            padding-top: 0px;
+            margin-top: 0px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            margin-right: 650px;
+            align-items: center;
+            border-inline-color: black;
+        }
+
+        .main-form{
+            padding-top: 25px;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            background-color: beige;
+            margin-right: 650px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <main>
+    <header>
+        <h1 style="padding-top: 0px; padding-bottom: 0px;">Sample Survey</h1>
+        <p id="description" style="font-size: 20px; padding-left: 70px; padding-top: 0px;">
+            This is a survey that aims to do something</p>
+    </header>
+
+    
+<div class="main-form">
+    <div>
+    <form action="" id="survey-form">
+        <div>
+        <label for="username">Name:</label>
+        <input type="text" id="name-label" placeholder="ex. Juan DelaCruz" required>
+        </div>
+        <br>
+        <div>
+        <label for="email address">Email:</label>
+        <input type="text" id="email-label" placeholder="ex. qjsdelacruz@tip.edu.ph" required>
+        </div>
+        <br>
+        <div>
+        <label for="ID Number">ID Number</label>
+        <input type="text"Number" id="number-label" placeholder="ex. 2223516" minlength="3" maxlength="7" required>
+        </div>
+    </form>
+    </div>
+<br>
+    <div>
+        <label for="Gender">Gender</label>
+        <select name="" id="dropdown ">
+            <option value=""></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+            <option value="Rather not disclose">Rather not disclose</option>
+        </select>
+    </div>
+
+<br>
+
+    <div>
+        <label for="year " id="radio"> What year are you in?</label><br>
+        <input type="radio" name="radio" value="1">
+        <label for="year " id="radio"> 1st Year</label> <br>
+        <input type="radio" name="radio" value="2">       
+        <label for="year " id="radio"> 2nd Year</label> <br>
+        <input type="radio" name="radio" value="3"> 
+        <label for="year " id="radio"> 3rd Year</label> <br>
+        <input type="radio" name="radio" value="4">
+        <label for="year " id="radio"> 4th Year</label>        
+    </div>
+<br>
+    <div>
+        <label for="year level"> Which social media platform do you use? (check all that apply)</label><br>
+        <input type="checkbox"> Discord <br>
+        <input type="checkbox"> Facebook <br>
+        <input type="checkbox"> Instagram <br>
+        <input type="checkbox"> Tiktok <br>
+        <input type="checkbox"> Others  <input type="text" placeholder="please specify">
+    </div>
+<br>
+    <div>
+        <label for="year level"> Which of the following devices do you use? (check all that apply)</label><br>
+        <input type="checkbox"> Personal Computer <br>
+        <input type="checkbox"> Laptop <br>
+        <input type="checkbox"> Cellphone <br>
+        <input type="checkbox"> Smart Tablet
+    </div>
+<br>
+    <div>
+        <label for="year " id="radio"> How many hours do you spend on social media daily?</label><br>
+        <input type="radio" name="radio" value="1">
+        <label for="year " id="radio"> Less than 5 hours</label> <br>
+        <input type="radio" name="radio" value="2">       
+        <label for="year " id="radio"> 5-10 hours</label> <br>
+        <input type="radio" name="radio" value="3"> 
+        <label for="year " id="radio"> More than 10 hours</label> <br>  
+    </div>
+
+
+<br>
+    <div>
+        <label for="comments "> Any suggestions on how to make this survey better?</label><br>
+        <input type="textarea" name="" id="textarea">
+    </div>
+
+    <button onclick="SubmitEvent">Submit</button>
+</div>
+</body>
+</html>
+
+
