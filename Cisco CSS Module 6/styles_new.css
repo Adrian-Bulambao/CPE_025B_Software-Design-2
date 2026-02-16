@@ -1,0 +1,118 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* soft light blue */
+    color: #222;
+}
+
+/* Header with Fade-In */
+header {
+    background: linear-gradient(90deg, #ff6a00, #ee0979); /* vibrant gradient */
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+header.visible {
+    opacity: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* Product Intro */
+.product-intro {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.product-image {
+    width: 320px;
+    border-radius: 15px;
+    animation: rotate 10s linear infinite;
+}
+
+/* Button with Hover Effects */
+.buy-now {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 35px;
+    background-color: #ff6a00;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #ee0979;
+    transform: scale(1.15);
+}
+
+.bigtext{
+        font-size: 100px;
+        font-weight: bold;
+    }
+
+/* Features Section */
+.features {
+    padding: 40px 20px;
+    background-color: #fff5f8;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #ee0979;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    background-color: #fff0f5;
+    margin: 12px 0;
+    padding: 15px 20px;
+    border-left: 5px solid #ff6a00;
+    font-weight: 500;
+    transform: translateX(-100%);
+    animation: slideIn 0.6s forwards;
+}
+
+/* Staggered animation delays */
+.feature-item:nth-child(1) { animation-delay: 0.2s; }
+.feature-item:nth-child(2) { animation-delay: 0.5s; }
+.feature-item:nth-child(3) { animation-delay: 0.8s; }
+.feature-item:nth-child(4) { animation-delay: 1.1s; }
+
+/* Footer */
+footer {
+    background-color: #ee0979;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+/* Keyframes */
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes slideIn {
+    to { transform: translateX(0); }
+}
