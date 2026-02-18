@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  background-color: #0654b3;
+  color: white;
+  padding: 20px 0;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* Navigation */
+.navigation-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation-menu a:hover,
+.navigation-menu a:focus {
+  text-decoration: underline;
+}
+
+/* Layout */
+.content {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Main */
+.main-content {
+  flex: 2;
+}
+
+/* Card Sections */
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #0654b3;
+}
+
+/* Lists */
+.feature-list {
+  padding-left: 20px;
+}
+
+/* Text Sizes */
+.large-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* High Contrast */
+.high-contrast-text {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}

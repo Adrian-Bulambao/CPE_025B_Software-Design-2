@@ -1,0 +1,43 @@
+$primary-color: #007bff;
+$bg-color: #f4f4f4;
+
+body {
+  font-family: Arial, sans-serif;
+  background: $bg-color;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: $primary-color;
+  text-align: center;
+}
+
+h2 {
+  color: darken($primary-color, 10%);
+  margin-bottom: 5px;
+}
+
+section {
+  margin-bottom: 20px;
+
+  p {
+    margin: 5px 0;
+  }
+
+  ul {
+    padding-left: 20px;
+
+    li {
+      margin: 5px 0;
+    }
+  }
+}
